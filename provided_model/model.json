@@ -1,0 +1,168 @@
+{
+  "model_version": "synthetic-cart-v2",
+  "algorithm": "numeric_cart_gini_v1",
+  "features": [
+    "average_balance_36m",
+    "balance_volatility",
+    "on_time_payment_rate",
+    "late_payment_count_36m",
+    "overdraft_count_36m",
+    "inflow_stability"
+  ],
+  "max_depth": 5,
+  "min_leaf": 60,
+  "root": {
+    "count": 1439,
+    "positive": 514,
+    "risk": 0.35719249478804727,
+    "feature": "late_payment_count_36m",
+    "threshold": 1.5,
+    "left": {
+      "count": 929,
+      "positive": 216,
+      "risk": 0.232508073196986,
+      "feature": "overdraft_count_36m",
+      "threshold": 1.5,
+      "left": {
+        "count": 784,
+        "positive": 159,
+        "risk": 0.20280612244897958,
+        "feature": "balance_volatility",
+        "threshold": 0.46921511234943725,
+        "left": {
+          "count": 617,
+          "positive": 112,
+          "risk": 0.18152350081037277,
+          "feature": "inflow_stability",
+          "threshold": 0.5656635580642668,
+          "left": {
+            "count": 94,
+            "positive": 28,
+            "risk": 0.2978723404255319
+          },
+          "right": {
+            "count": 523,
+            "positive": 84,
+            "risk": 0.16061185468451242,
+            "feature": "on_time_payment_rate",
+            "threshold": 0.6926491226402464,
+            "left": {
+              "count": 64,
+              "positive": 6,
+              "risk": 0.09375
+            },
+            "right": {
+              "count": 459,
+              "positive": 78,
+              "risk": 0.16993464052287582
+            }
+          }
+        },
+        "right": {
+          "count": 167,
+          "positive": 47,
+          "risk": 0.281437125748503,
+          "feature": "balance_volatility",
+          "threshold": 0.5337086355524432,
+          "left": {
+            "count": 86,
+            "positive": 30,
+            "risk": 0.3488372093023256
+          },
+          "right": {
+            "count": 81,
+            "positive": 17,
+            "risk": 0.20987654320987653
+          }
+        }
+      },
+      "right": {
+        "count": 145,
+        "positive": 57,
+        "risk": 0.3931034482758621,
+        "feature": "on_time_payment_rate",
+        "threshold": 0.855144395727226,
+        "left": {
+          "count": 83,
+          "positive": 42,
+          "risk": 0.5060240963855421
+        },
+        "right": {
+          "count": 62,
+          "positive": 15,
+          "risk": 0.24193548387096775
+        }
+      }
+    },
+    "right": {
+      "count": 510,
+      "positive": 298,
+      "risk": 0.5843137254901961,
+      "feature": "late_payment_count_36m",
+      "threshold": 2.5,
+      "left": {
+        "count": 250,
+        "positive": 120,
+        "risk": 0.48,
+        "feature": "balance_volatility",
+        "threshold": 0.34456528369032186,
+        "left": {
+          "count": 144,
+          "positive": 56,
+          "risk": 0.3888888888888889,
+          "feature": "on_time_payment_rate",
+          "threshold": 0.7097779707466356,
+          "left": {
+            "count": 61,
+            "positive": 30,
+            "risk": 0.4918032786885246
+          },
+          "right": {
+            "count": 83,
+            "positive": 26,
+            "risk": 0.3132530120481928
+          }
+        },
+        "right": {
+          "count": 106,
+          "positive": 64,
+          "risk": 0.6037735849056604
+        }
+      },
+      "right": {
+        "count": 260,
+        "positive": 178,
+        "risk": 0.6846153846153846,
+        "feature": "on_time_payment_rate",
+        "threshold": 0.6110323018112538,
+        "left": {
+          "count": 87,
+          "positive": 69,
+          "risk": 0.7931034482758621
+        },
+        "right": {
+          "count": 173,
+          "positive": 109,
+          "risk": 0.630057803468208,
+          "feature": "overdraft_count_36m",
+          "threshold": 0.5,
+          "left": {
+            "count": 91,
+            "positive": 48,
+            "risk": 0.5274725274725275
+          },
+          "right": {
+            "count": 82,
+            "positive": 61,
+            "risk": 0.7439024390243902
+          }
+        }
+      }
+    }
+  },
+  "calibration": {
+    "method": "sigmoid",
+    "slope": 0.673179243139725,
+    "intercept": -0.20576258978230066
+  }
+}

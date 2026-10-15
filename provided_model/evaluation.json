@@ -1,0 +1,26 @@
+{
+  "model_version": "synthetic-cart-v2",
+  "seed": 20260927,
+  "feature_names": [
+    "average_balance_36m",
+    "balance_volatility",
+    "on_time_payment_rate",
+    "late_payment_count_36m",
+    "overdraft_count_36m",
+    "inflow_stability"
+  ],
+  "label": "missed_payment_next_12m",
+  "split_counts": {
+    "train": 1439,
+    "calibration": 480,
+    "test": 481
+  },
+  "test_event_rate": 0.3576,
+  "roc_auc": 0.6987,
+  "brier_score": 0.2013,
+  "baseline_brier_score": 0.2297,
+  "limitations": [
+    "All histories and labels are fictional.",
+    "Held-out performance does not establish real lending validity or fairness."
+  ]
+}
