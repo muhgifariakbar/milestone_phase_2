@@ -3,5 +3,6 @@ uvicorn>=0.30,<1
 streamlit>=1.40,<2
 httpx>=0.27,<1
 openai>=1.75,<3
-pymongo>=4.9,<5
+langchain-openai>=0.3,<0.4
+psycopg[binary]>=3.2,<4
 pytest>=8,<10

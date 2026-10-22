@@ -1,0 +1,32 @@
+[
+  {
+    "customer_id": "C00004",
+    "label": "Everyday account",
+    "scenario": "A routine assessment with a typical balance.",
+    "demo_token": "classroom-token-00004"
+  },
+  {
+    "customer_id": "C00001",
+    "label": "Strong score, modest balance",
+    "scenario": "Compare score and balance in the limit.",
+    "demo_token": "classroom-token-00001"
+  },
+  {
+    "customer_id": "C00062",
+    "label": "Large balance, lower score",
+    "scenario": "Behavior and balance affect different steps.",
+    "demo_token": "classroom-token-00062"
+  },
+  {
+    "customer_id": "C00025",
+    "label": "Several late payments",
+    "scenario": "Discuss recorded payment behavior carefully.",
+    "demo_token": "classroom-token-00025"
+  },
+  {
+    "customer_id": "C00352",
+    "label": "Limit cap",
+    "scenario": "See how the cap affects an otherwise larger result.",
+    "demo_token": "classroom-token-00352"
+  }
+]
